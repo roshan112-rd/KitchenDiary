@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/red">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="30dp"
+    tools:context=".LogIn"
+    android:background="@color/red"
+    >
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:onClick="btn_skip"
+        android:src="@drawable/head">
+    </androidx.appcompat.widget.AppCompatImageView>
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:onClick="btn_skip"
+        android:src="@drawable/body">
+    </androidx.appcompat.widget.AppCompatImageView>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+
+            <EditText
+                android:id="@+id/txt_email2"
+                android:hint="Email"
+
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/border3"
+                android:backgroundTint="#FAF7F7"
+                android:inputType="text"
+                android:paddingLeft="20dp"
+                android:textSize="20sp"></EditText>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            app:passwordToggleEnabled="true">
+
+            <EditText
+                android:id="@+id/txt_password2"
+                android:hint="Password"
+                android:inputType="textPassword"
+
+                android:paddingLeft="20dp"
+                android:textSize="20sp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/border3"
+                android:backgroundTint="#FAF7F7">
+            </EditText>
+        </com.google.android.material.textfield.TextInputLayout>
+    <TextView
+        android:onClick="btn_signup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/black"
+        android:fontFamily="@font/merriweather_bold"
+        android:text="New here? SIGN UP"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20dp">
+
+    </TextView>
+    <Button
+        android:id="@+id/btnLogin"
+        android:text="Login"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:textStyle="bold"
+        android:textColor="@color/red"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/border3"
+        android:backgroundTint="@color/white"
+        android:textSize="20sp"
+        android:layout_gravity="center_vertical|center_horizontal"
+        />
+
+    <TextView
+        android:onClick="btn_skip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="@color/black"
+        android:fontFamily="@font/merriweather_bold"
+        android:text="SKIP FOR NOW"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20dp">
+
+    </TextView>
+
+
+<!--        <Button-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="60dp"-->
+<!--        android:text="Register"-->
+<!--        android:textColor="@color/white"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:background="@drawable/border"-->
+<!--        android:backgroundTint="@color/black"-->
+<!--        android:onClick="btn_signup"/>-->
+
+</LinearLayout>
+</ScrollView>

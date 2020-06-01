@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Database"
+    android:scrollbars="vertical"
+    android:orientation="vertical"
+    android:background="@color/red"
+    >
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="30dp"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:id="@+id/iv_foodImg"
+            android:src="@drawable/img">
+        </androidx.appcompat.widget.AppCompatImageView>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:hint="Recipe Name"
+                android:id="@+id/txt_rec_name"
+                android:textColorHint="@color/red"
+                android:layout_marginBottom="10dp"
+                android:descendantFocusability="blocksDescendants"
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/border4"
+                android:backgroundTint="#FAF7F7"
+                android:inputType="text"
+                android:paddingLeft="20dp"
+                android:textSize="20sp"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_marginBottom="10dp"
+                android:descendantFocusability="blocksDescendants"
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/border4"
+                android:backgroundTint="#FAF7F7"
+                android:paddingLeft="20dp"
+                android:textSize="20sp"
+                android:id="@+id/txt_description"
+                android:hint="Description"
+
+                android:inputType="textMultiLine"
+                android:lines="8"
+                android:minLines="6"
+                android:gravity="top|left"
+                android:maxLines="10"
+
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:hint="Time to Prepare Dish"
+                android:id="@+id/text_time"
+                android:layout_marginBottom="10dp"
+                android:descendantFocusability="blocksDescendants"
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/border4"
+                android:backgroundTint="#FAF7F7"
+                android:inputType="text"
+                android:paddingLeft="20dp"
+                android:textSize="20sp"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:text="Select Image"
+            android:onClick="btnSelectImg"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:textStyle="bold"
+            android:textColor="@color/red"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/border3"
+            android:backgroundTint="@color/white"
+            android:textSize="20sp"
+            android:layout_gravity="center_vertical|center_horizontal"
+            >
+        </androidx.appcompat.widget.AppCompatButton>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:text="Upload Recipe"
+            android:onClick="btnUpload"
+            android:id="@+id/upbtn"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:textStyle="bold"
+            android:textColor="@color/red"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/border3"
+            android:backgroundTint="@color/white"
+            android:textSize="20sp"
+            android:layout_gravity="center_vertical|center_horizontal"
+            >
+        </androidx.appcompat.widget.AppCompatButton>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="www.chefdiary.com"
+            android:textColor="@color/white"
+            android:layout_gravity="center_vertical|center_horizontal"/>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</ScrollView>

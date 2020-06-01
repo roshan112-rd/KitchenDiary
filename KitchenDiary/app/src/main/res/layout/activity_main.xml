@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".MainActivity"
+    android:background="@color/red">
+
+        <com.google.android.material.textfield.TextInputEditText
+
+            android:hint="Search here..."
+            android:id="@+id/txt_searchText"
+            android:padding="5dp"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:textStyle="bold"
+            android:textColor="@color/red"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/border4"
+            android:backgroundTint="@color/white"
+            android:textSize="20sp"
+
+            />
+
+        <TextView
+            android:id="@+id/texy"
+            android:layout_width="500dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_searchText"
+            android:fontFamily="@font/aladin"
+            android:text="NOTHING BRINGS PEOPLE TOGETHER LIKE GOOD FOOD"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:layout_margin="5dp"
+            android:textColor="@color/white"
+            android:textSize="25dp"
+            android:textStyle="bold">
+
+        </TextView>
+
+<androidx.recyclerview.widget.RecyclerView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/recyclerView"
+    android:scrollbars="vertical"
+    android:layout_below="@+id/texy"
+
+    >
+
+</androidx.recyclerview.widget.RecyclerView>
+
+
+
+
+
+
+</RelativeLayout>
