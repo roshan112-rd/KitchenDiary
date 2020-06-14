@@ -18,12 +18,14 @@
     <androidx.appcompat.widget.AppCompatImageView
         android:layout_width="match_parent"
         android:layout_height="150dp"
+        android:id="@+id/logo"
         android:src="@drawable/head">
     </androidx.appcompat.widget.AppCompatImageView>
 
     <androidx.appcompat.widget.AppCompatImageView
         android:layout_width="match_parent"
         android:layout_height="100dp"
+        android:id="@+id/logo2"
         android:src="@drawable/body">
     </androidx.appcompat.widget.AppCompatImageView>
 
@@ -162,6 +164,7 @@
         android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="20dp"
+        android:id="@+id/logbtn"
         android:onClick="btnLogin">
     </TextView>
 

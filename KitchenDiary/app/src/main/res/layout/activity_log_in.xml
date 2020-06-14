@@ -16,6 +16,7 @@
     >
     <androidx.appcompat.widget.AppCompatImageView
         android:layout_width="match_parent"
+        android:id="@+id/logo"
         android:layout_height="150dp"
         android:onClick="btn_skip"
         android:src="@drawable/head">
@@ -23,6 +24,7 @@
     <androidx.appcompat.widget.AppCompatImageView
         android:layout_width="match_parent"
         android:layout_height="100dp"
+        android:id="@+id/logo2"
         android:onClick="btn_skip"
         android:src="@drawable/body">
     </androidx.appcompat.widget.AppCompatImageView>
@@ -43,7 +45,9 @@
                 android:backgroundTint="#FAF7F7"
                 android:inputType="text"
                 android:paddingLeft="20dp"
-                android:textSize="20sp"></EditText>
+                android:textSize="20sp">
+
+            </EditText>
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
@@ -76,6 +80,7 @@
         android:fontFamily="@font/merriweather_bold"
         android:text="New here? SIGN UP"
         android:textAlignment="center"
+        android:id="@+id/sup"
         android:textColor="@color/white"
         android:textSize="20dp">
 
@@ -100,6 +105,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
         android:backgroundTint="@color/black"
+        android:id="@+id/skip"
         android:fontFamily="@font/merriweather_bold"
         android:text="SKIP FOR NOW"
         android:textAlignment="center"
